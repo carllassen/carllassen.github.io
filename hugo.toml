@@ -1,1 +1,110 @@
-# Theme config.
+baseURL = 'https://carllassen.github.io/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = 'Agnes'
+
+[params]
+	dateFormat = "Jan 2, 2023" 
+	authorName = "Ported to Hugo by Debashish"
+	google_analytics_id = "GA-"
+	
+[menu]
+	[[menu.main]]
+		Name = "Contact"
+		URL = "#"
+		weight = 1
+	
+	[[menu.main]]
+		Name = "About us"
+		URL = "#"
+		weight = 2
+	
+	[[menu.main]]
+		Name = "FAQ's"
+		URL = "#"
+		weight = 3
+	
+	[[menu.main]]
+		Name = "Support"
+		URL = "#"
+		weight = 4
+		
+[params.social]
+	TwitterURL = "https://twitter.com/podbharati"
+	GoogleURL = "http://google.com"
+	FacebookURL = "https://facebook.com/podbharati"
+		
+[params.content]
+	LeadTitle = "Start with the Y: Generating energy in the sky"
+	LeadDescription = "Fly-gen wind energy generates much cheaper and much more consistent energy than traditional wind turbines"
+	ButtonCaption = "Pricing & Plans"
+	ButtonURL = "#pricing"
+
+################### Feature Columns (do not exceed 4) ####################
+
+[[params.feature]]
+	FeatureTitle = "5x faster ROI"
+	FeatureDescription = "A pseudo-Latin text used in web design, layout, and printing in place of English to emphasise design elements."
+	FeatureImage = "images/feature-1.png"
+	
+[[params.feature]]
+	FeatureTitle = "10x less material"
+	FeatureDescription = "Huge towers and constructions are replace by software that keeps the plane in the air."
+	FeatureImage = "images/feature-2.png"
+
+[[params.feature]]
+	FeatureTitle = "1.75x more energy hours"
+	FeatureDescription = "A pseudo-Latin text used in web design, layout, and printing in place of English to emphasise design elements."
+	FeatureImage = "images/feature-3.png"
+	
+[[params.feature]]
+	FeatureTitle = "Wherever you want it"
+	FeatureDescription = "A pseudo-Latin text used in web design, layout, and printing in place of English to emphasise design elements."
+	FeatureImage = "images/feature-4.png"
+	
+################### Pricing Columns (do not exceed 3) ####################
+
+[[params.pricing]]
+	PricingTitle = "Starter"
+	PricingRate = "27"	
+	PricingDuration = "/mo"	
+	ButtonCaption = "Get Early Access"
+ 	ButtonURL = "https://example.com/early-access.html"
+	[[params.pricing.Features]]
+		Description = "Lorem ipsum is common text"
+	[[params.pricing.Features]]
+		Description = "Lorem ipsum is common text"
+	[[params.pricing.Features]]
+		Description = "Lorem ipsum is common text"
+	[[params.pricing.Features]]
+		Description = "Lorem ipsum is common text"	
+
+[[params.pricing]]
+	PricingTitle = "Professional"
+	PricingRate = "97"
+	PricingDuration = "/day"	
+	ButtonCaption = "Get Earlier Access"
+ 	ButtonURL = "https://example.com/earlier-access.html"
+	[[params.pricing.Features]]
+		Description = "Lorem ipsum is common text"
+	[[params.pricing.Features]]
+		Description = "Lorem ipsum is common text"
+	[[params.pricing.Features]]
+		Description = "Lorem ipsum is common text"
+	[[params.pricing.Features]]
+		Description = "Lorem ipsum is common text"		
+	
+[[params.pricing]]
+	PricingTitle = "Business"
+	PricingRate = "147"
+	PricingDuration = "/yr"	
+	ButtonCaption = "Get Earliest Access"
+ 	ButtonURL = "https://example.com/earliest-access.html"
+	[[params.pricing.Features]]
+		Description = "Lorem ipsum is common text"
+	[[params.pricing.Features]]
+		Description = "Lorem ipsum is common text"
+	[[params.pricing.Features]]
+		Description = "Lorem ipsum is common text"
+	[[params.pricing.Features]]
+		Description = "Lorem ipsum is common text"	
