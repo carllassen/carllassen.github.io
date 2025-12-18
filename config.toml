@@ -11,7 +11,7 @@ theme = 'Agnes'
 [menu]
 	[[menu.main]]
 		Name = "Contact"
-		URL = "#"
+		URL = "/contact.html"
 		weight = 1
 	
 	[[menu.main]]

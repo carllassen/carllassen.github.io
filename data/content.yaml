@@ -1,7 +1,7 @@
 leadtitle: "Vi hjælper med at elektrificere, digitalisere og automatisere"
 leaddescription: "Elektrificeringen giver typisk muligheder for at digitalisere en større del af processerne. Elektrificerede teknologier kræver mindre vedligeholdelse og åbner muligheder for automatisering og besparelser."
 buttoncaption: "Priser og planer"
-buttonurl: "#pricing"
+buttonurl: "/contact.html"
 
 feature:
   - FeatureTitle: "Electrificering"
@@ -22,7 +22,7 @@ pricing:
     PricingRate: "Gratis"
     PricingDuration: ""
     ButtonCaption: "Book nu"
-    ButtonURL: "https://example.com/early-access.html"
+    ButtonURL: "/contact.html"
     Features:
       - Description: "Uforpligtende møde, hvor muligheder undersøges"
       - Description: "Få gratis vejledning til at elektrificere, digitalisere og automatisere"
@@ -32,7 +32,7 @@ pricing:
     PricingRate: "40%"
     PricingDuration: "/af ROI efter 5 år"
     ButtonCaption: "Bestil nu"
-    ButtonURL: "https://example.com/earlier-access.html"
+    ButtonURL: "/contact.html"
     Features:
       - Description: "Du betaler intet upfront"
       - Description: "Du betaler kun, hvis du får en fortjeneste på investeringen"
@@ -42,7 +42,7 @@ pricing:
     PricingRate: "250"
     PricingDuration: "/i timen"
     ButtonCaption: "Bestil nu"
-    ButtonURL: "https://example.com/earliest-access.html"
+    ButtonURL: "/contact.html"
     Features:
       - Description: "Udfører scope 1, 2, og 3 LCA-analyser"
       - Description: "Udarbejder ESG-rapporter"

@@ -12,7 +12,7 @@
     if(el.classList && el.classList.contains('button')){
       // allow mailto and external links to pass
       var href = el.getAttribute('href') || '';
-      if(href.startsWith('http') || href.startsWith('mailto:')) return;
+      if(href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('/')) return;
       e.preventDefault();
       openModal();
     }
