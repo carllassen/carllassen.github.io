@@ -1,0 +1,63 @@
+baseURL = 'https://carllassen.github.io/'
+languageCode = 'en-us'
+title = 'Elektrificer nu og gør en forskel for klimaet'
+theme = 'Agnes'
+
+[params]
+	dateFormat = "Jan 2, 2023" 
+	authorName = "Ported to Hugo by Debashish"
+	google_analytics_id = "GA-"
+	
+[menu]
+	[[menu.main]]
+		Name = "Contact"
+		URL = "#"
+		weight = 1
+	
+	[[menu.main]]
+		Name = "About us"
+		URL = "#"
+		weight = 2
+	
+	[[menu.main]]
+		Name = "FAQ's"
+		URL = "#"
+		weight = 3
+	
+	[[menu.main]]
+		Name = "Support"
+		URL = "#"
+		weight = 4
+		
+[params.social]
+	TwitterURL = "https://twitter.com/podbharati"
+	GoogleURL = "http://google.com"
+	FacebookURL = "https://facebook.com/podbharati"
+		
+[params.content]
+	LeadTitle = "Vi hjælper med \n\tat elektrificere, digitalisere \n\tog automatisere"
+	LeadDescription = "Elektrificeringen giver typisk\nmuligheder for at digitalisere\nen større del af processerne.\nElektrificerede teknologier \nkræver mindre vedligeholdelse \nog åbner muligheder for \nautomatisering og besparelser."
+	ButtonCaption = "Priser og planer"
+	ButtonURL = "#pricing"
+
+################### Feature Columns (do not exceed 4) ####################
+
+[[params.feature]]
+	FeatureTitle = "Electrificering"
+	FeatureDescription = "Electriciteten er aller billigst \nmidt på dagen. Som virksomhed \nhar du en kæmpe mulighed for\nat gøre noget godt for klimaet\nimens du får store besparelser. "
+	FeatureImage = "images/feature-1.png"
+	
+[[params.feature]]
+	FeatureTitle = "Digitalisering"
+	FeatureDescription = "Det er meget nemmere at måle\nde electrificerede teknologier, \nda energiflowet kan fungere uden \n menneskelig indblanding. Derfor\nbliver det nemmere at spore\nafkastet af sin investering"
+	FeatureImage = "images/feature-2.png"
+
+[[params.feature]]
+	FeatureTitle = "Automatisering"
+	FeatureDescription = "De fleste af teknologierne er \ntilknyttet internettet og kan\nderfor styres automatisk. Det\ngiver yderligere besparelser og \ngør hverdagen simplere."
+	FeatureImage = "images/feature-3.png"
+	
+[[params.feature]]
+	FeatureTitle = "LCA og ESG"
+	FeatureDescription = "Vi kan også lave lave LCA analyser\nog hjælpe med ESG rapportering.\nVi tager højde for alle processerne \nog materialerne gennem hele\nproduktets levetid."
+	FeatureImage = "images/feature-4.png"
