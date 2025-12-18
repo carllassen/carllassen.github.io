@@ -4,7 +4,7 @@ buttoncaption: "Priser og planer"
 buttonurl: "/contact.html"
 
 feature:
-  - FeatureTitle: "Electrificering"
+  - FeatureTitle: "Elektrificering"
     FeatureDescription: "Electriciteten er allerbilligst midt på dagen. Som virksomhed har du en kæmpe mulighed for at gøre noget godt for klimaet imens du får store besparelser."
     FeatureImage: "images/feature-1.png"
   - FeatureTitle: "Digitalisering"
