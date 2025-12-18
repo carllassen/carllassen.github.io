@@ -1,0 +1,9 @@
+#contact-modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;z-index:9999;visibility:hidden;opacity:0;transition:opacity .18s ease, visibility .18s;}
+#contact-modal[aria-hidden="false"]{visibility:visible;opacity:1}
+.contact-modal-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.6)}
+.contact-modal-panel{position:relative;background:#fff;padding:20px;border-radius:8px;max-width:480px;width:100%;z-index:2}
+.contact-modal-close{position:absolute;right:8px;top:8px;border:0;background:transparent;font-size:20px}
+.contact-form label{display:block;margin-bottom:10px}
+.contact-form input,.contact-form textarea{width:100%;padding:8px;margin-top:4px}
+.contact-form-actions{display:flex;gap:8px;margin-top:12px}
+body.contact-modal-open{overflow:hidden}

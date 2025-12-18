@@ -1,6 +1,6 @@
 baseURL = 'https://carllassen.github.io/'
 languageCode = 'en-us'
-title = 'Elektrificer nu og gør en forskel for klimaet'
+title = 'Elektrificer nu'
 theme = 'Agnes'
 
 [params]
