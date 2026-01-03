@@ -11,8 +11,8 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "Our Technology"
-  pageRef = "our-technology"
+  name = "Technology"
+  pageRef = "technology"
   weight = 20
 
 #[[main]]
@@ -39,14 +39,9 @@
 #  weight = 20
 
 [[main]]
-  name = "Partner up"
-  pageRef = "partner-up"
+  name = "Join us"
+  pageRef = "join-us"
   weight = 30
-
-[[main]]
-  name = "Invest"
-  pageRef = "invest"
-  weight = 40
 
   [[main]]
   name = "About"
