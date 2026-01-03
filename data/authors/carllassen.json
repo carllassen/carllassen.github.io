@@ -1,0 +1,9 @@
+{
+    "name": "Carl Lassen",
+    "image" : "img/author.jpg",
+    "bio": "Green tech innovator and circular business developer",
+    "social": [
+        { "linkedin": "https://www.linkedin.com/in/carl-lassen/" },
+        { "twitter": "https://twitter.com/nunocoracao" }
+    ]
+}

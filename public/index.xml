@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Less materials -- Lower Initial Capital Cost - Faster Return on Investment on Aviate Energy</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Less materials -- Lower Initial Capital Cost - Faster Return on Investment on Aviate Energy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2026 Carl Lassen</copyright>
+    <lastBuildDate>Sun, 21 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Carl Lassen</title>
+      <link>http://localhost:1313/partner-up/carl_lassen/</link>
+      <pubDate>Sun, 21 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/partner-up/carl_lassen/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/partner-up/carl_lassen/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>Turbine placement and rotation direction</title>
+      <link>http://localhost:1313/our-technology/turbine-placement/</link>
+      <pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/our-technology/turbine-placement/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/our-technology/turbine-placement/featured.jpeg" />
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/blog/another-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/another-post/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/another-post/featured.png" />
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/blog/first-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blog/first-post/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/draft/video_carousel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/draft/video_carousel/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/contact/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
