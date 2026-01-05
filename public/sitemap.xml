@@ -3,13 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>http://localhost:1313/partner-up/</loc>
+    <loc>http://localhost:1313/join-us/</loc>
     <lastmod>2025-12-21T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/partner-up/carl_lassen/</loc>
+    <loc>http://localhost:1313/join-us/carl_lassen/</loc>
     <lastmod>2025-12-21T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -21,13 +21,13 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/our-technology/</loc>
+    <loc>http://localhost:1313/technology/</loc>
     <lastmod>2025-12-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/our-technology/turbine-placement/</loc>
+    <loc>http://localhost:1313/technology/turbine-placement/</loc>
     <lastmod>2025-12-20T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

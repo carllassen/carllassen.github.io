@@ -1,4 +1,6 @@
 # We are looking for partners and all sorts of collaborations. 
+Whether you are an experienced engineer, a surfer dude, or a curious student, please reach out! We can collaborate, team up, or fund your next student project. We are always interested in new perspectives and bright people!
+#
 # Please reach out if you are an innovator!
 Airborne Wind Energy has the potential to disrupt the whole energy industry. It provides more stable energy with less down time at 10x lower cost. It will not only replace wind turbines. It will disrupt the fossil fuel industry.
 # 

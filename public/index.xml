@@ -11,22 +11,22 @@
     
     <item>
       <title>Carl Lassen</title>
-      <link>http://localhost:1313/partner-up/carl_lassen/</link>
+      <link>http://localhost:1313/join-us/carl_lassen/</link>
       <pubDate>Sun, 21 Dec 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/partner-up/carl_lassen/</guid>
+      <guid>http://localhost:1313/join-us/carl_lassen/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/partner-up/carl_lassen/featured.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/join-us/carl_lassen/featured.jpg" />
     </item>
     
     <item>
       <title>Turbine placement and rotation direction</title>
-      <link>http://localhost:1313/our-technology/turbine-placement/</link>
+      <link>http://localhost:1313/technology/turbine-placement/</link>
       <pubDate>Sat, 20 Dec 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/our-technology/turbine-placement/</guid>
+      <guid>http://localhost:1313/technology/turbine-placement/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/our-technology/turbine-placement/featured.jpeg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/technology/turbine-placement/featured.jpeg" />
     </item>
     
     <item>

@@ -14,25 +14,29 @@ ___
 #
 ## 3.5x faster ROI
 #
-
 ___
 
-# Start with the why:
-
-#### In 1896, Swedish chemist Svante Arrhenius discovered global warming. 130 years later, the climate crisis is common knowledge. Yet, the carben emissions are still rising to new records.
+# How it works
 ##
-#### Even rich modern democracies and modern technologies are still inadequate to reach net zero. We need new strategies and the clock is ticking...
+#### When wind blows, the windywing flies up in the sky
 ##
-#### We need to make big bets. Not because we love gambling, but because its riskier not to. Status quo is not an option. We need 10x improvements!
+#### In the sky, the windywing flies in an 8-pattern
 ##
-#### We don't know which technologies will save the world, but we believe that Airborne Wind Energy has the potential change the world to the better! 
+#### When it flies around the propellers generate electricity
 ##
-#### No matter which green tech you believe in, we encourage you to develop radical 10x technologies!
+#### It does not need a huge tower or fundation to keep it stable
+## 
+#### It does not need huge cranes and workers in harzardeus enviroments
 ##
+#### The instalation process is much easier and material costs much lower
+##
+#### On top on that, it can generate electricity in higher and windier altitudes
+#
 ___
 
 # Learn from the best Airborne Wind Energy Pioneers
 {{< youtubeLite id="qd_hEja6bzE" label="Pulling Power from the Sky: The Story of Makani [Feature Film]" >}}
+#
 
 
 

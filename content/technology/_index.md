@@ -2,3 +2,4 @@
 
 
 {{< carousel images="gallery/*" aspectRatio="21-9" interval="2500" >}}
+
