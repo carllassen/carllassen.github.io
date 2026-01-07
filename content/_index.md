@@ -2,9 +2,15 @@
 title: "Less materials -- Lower Initial Capital Cost - Faster Return on Investment"
 ---
 ___
+
+
+
 # Airborne Wind Energy
 #
-## 10x less Materials
+![alt text](WindTurbineMaterialWaste.png)
+<img src="AWELessWaste.svg" alt="Airborne Wind Energy" style="width:100%; max-width:1400px; height:auto; display:block;" />
+
+## 10x less Materials Less materials -- Lower Initial Capital Cost - Faster Return on Investment
 #
 ## 3-20x cheaper LCOE 
 #
