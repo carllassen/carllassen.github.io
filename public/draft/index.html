@@ -15,8 +15,8 @@
 
   
   
-    <title>Drafts &middot; Aviate Energy</title>
-    <meta name="title" content="Drafts &middot; Aviate Energy">
+    <title> &middot; Aviate Energy</title>
+    <meta name="title" content=" &middot; Aviate Energy">
   
 
   
@@ -39,13 +39,13 @@
   
   <meta property="og:url" content="http://localhost:1313/draft/">
   <meta property="og:site_name" content="Aviate Energy">
-  <meta property="og:title" content="Drafts">
+  <meta property="og:title" content="Aviate Energy">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Drafts">
+  <meta name="twitter:title" content="Aviate Energy">
 
   
   
@@ -161,6 +161,20 @@
 
 
 
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/lib/lite-youtube-embed/lite-yt-embed.cc5891ec7e6ed1fb2d99de7aed55ad7e90f7ebfb3b3f4e992d4bd45f5d5769fa7901e1c2b511eedd6b2a927cfa204101bc363234b2c843e1ad98ae93ac9a060f.css"
+    integrity="sha512-zFiR7H5u0fstmd567VWtfpD36/s7P06ZLUvUX11Xafp5AeHCtRHu3Wsqknz6IEEBvDYyNLLIQ&#43;GtmK6TrJoGDw==">
+  
+  
+  <script
+    type="text/javascript"
+    src="/lib/lite-youtube-embed/lite-yt-embed.86b6b182cbf262b1c6bc745086ba393a1c464ba219b6cf9ccc04329b075beec89ab5088077fd466d69e305466e6ecf1eb0b2c5fef0dc480e1fe4ccf466a5dfb4.js"
+    integrity="sha512-hraxgsvyYrHGvHRQhro5OhxGS6IZts&#43;czAQymwdb7siatQiAd/1GbWnjBUZubs8esLLF/vDcSA4f5Mz0ZqXftA=="></script>
+
 
 
 
@@ -193,9 +207,9 @@
   [{
     "@context": "https://schema.org",
     "@type": "Article",
-    "articleSection": "Drafts",
-    "name": "Drafts",
-    "headline": "Drafts",
+    "articleSection": "",
+    "name": "",
+    "headline": "",
     
     
     "inLanguage": "en",
@@ -213,7 +227,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "0"
+    "wordCount": "158"
   }]
   </script>
 
@@ -655,7 +669,7 @@
   
   <header>
     
-    <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">Drafts</h1>
+    <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral"></h1>
     <div class="mt-1 mb-2 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
 
@@ -688,6 +702,20 @@
     </div>
     
     
+      
+      
+        
+        
+      
+      
+      
+      <script
+        type="text/javascript"
+        src="/js/page.min.54b6f4371722649edbe871e431d8670d670878c22be8f36e229fe53cc9b786fe25a834def5e6de621f7a3e37b72bc8cd73839aa5ed907ed6cbd45cd3e1b0fa20.js"
+        integrity="sha512-VLb0NxciZJ7b6HHkMdhnDWcIeMIr6PNuIp/lPMm3hv4lqDTe9ebeYh96Pje3K8jNc4Oape2QftbL1FzT4bD6IA=="
+        data-oid="views_Draft\_index.md"
+        data-oid-likes="likes_Draft\_index.md"></script>
+    
   </header>
 
   
@@ -696,7 +724,193 @@
   <section class="mt-0 prose flex max-w-full flex-col dark:prose-invert lg:flex-row">
     
     <div class="min-w-0 min-h-0 max-w-prose">
-      
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Animations + Text</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #002544;
+            color: #f2f2f2;
+        }
+ /* 🌟 Video Header */
+        .video-header {
+            position: relative;
+            width: 100%;
+            height: 50vh; /* height of your video section */
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .video-header video {
+            position: fixed;
+            top: -60;
+            left: 0;
+            width: 100%;
+            height: 140vh;
+            object-fit: cover;
+            z-index: -1; /* behind the text */
+        }
+        .video-header .header-text {
+            position: relative;
+            z-index: 1;
+            font-size: 3rem;
+            font-weight: bold;
+            padding: 0 20px;
+            color: #f2f2f2;
+        }
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+        }
+        .section:nth-child(even) {
+            background: #01293f; /* alternating section background if desired */
+        }
+        .section:nth-child(odd) {
+            background: #06151d; /* solid background */
+            position: relative;  /* ensures it appears above the fixed video */
+    z-index: 1;          /* puts the section over the video */
+}
+        .text-block {
+            padding-left: 3%;
+            padding-right: 3%;
+            flex: 1;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: left;
+        }
+        .anim-block {
+            flex: 1;
+            max-width: 500px;
+            width: 100%;
+        }
+        /* Responsive stacking */
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .text-block {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+           <!-- 🎥 Video Header -->
+    <div class="video-header">
+        <video autoplay loop muted playsinline>
+            <source src="assets/shorter-video.mp4" type="video/mp4">
+        </video>
+        <div class="header-text">
+            AWE will change the game for wind energy
+        </div>
+    </div>
+    <!-- Section 1 -->
+    <div class="section">
+        <div class="anim-block" id="anim2"></div>
+        <div class="text-block">
+            <strong>Only the outer third</strong> of the wings contribute to 80% of energy production. 
+        </div>
+    </div>
+    <!-- Section 2 -->
+    <div class="section">
+        <div class="anim-block" id="anim1"></div>
+        <div class="text-block">
+            AWE only moves in the efficient area and uses
+            <strong>10x fewer materials</strong>
+        </div>
+    </div>
+    <!-- Section 3 -->
+    <div class="section">
+        <div class="anim-block" id="anim3"></div>
+        <div class="text-block">
+            Cheaper transportation and installation equals
+            <strong>3x faster Return of Investment</strong>
+        </div>
+    </div>
+        <!-- Section 4 -->
+    <div class="section">
+        <div class="anim-block" id="anim4"></div>
+        <div class="text-block">
+            Operating at greater altitudes with more wind 
+            <strong>increases full load hours by 60%</strong>
+        </div>
+    </div>
+    <div class="section">
+        <div class="text-block">
+            <h4>The existing AWE technology can mainly be divided into four groups. 
+There are rigid versus flexible and ground-gen versus fly-gen. 
+<br><br>The flexible kite type is cheaper to produce and can survive crashes, but it has lower 
+aerodynamics. 
+<br><br>The fixed kite type has higher aerodynamics, and a longer 
+lifetime as long as it does not collide with anything.
+<br><br> Fly-gen kite generates energy in the air with propellers and is theoretically more efficient than ground-gen, but it is also riskier because the 
+expensive equipment is flying around in the air. </h4>
+        </div>
+    </div>
+    <!-- Lottie Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <script>
+        // Animation 1
+        lottie.loadAnimation({
+            container: document.getElementById('anim1'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'lottie/animation1.json'
+        });
+        // Animation 2
+        lottie.loadAnimation({
+            container: document.getElementById('anim2'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'lottie/animation2.json'
+        });
+        // Truck Animation
+        lottie.loadAnimation({
+            container: document.getElementById('anim3'),
+            renderer: 'svg',
+            loop: false,
+            autoplay: true,
+            path: 'lottie/Truck.json'
+        });
+        // Altitude Animation
+        lottie.loadAnimation({
+            container: document.getElementById('anim4'),
+            renderer: 'svg',
+            loop: false,
+            autoplay: true,
+            path: 'lottie/Altitude.json'
+        });
+    </script>
+    </script>
+</body>
+</html>
+
+<h1 class="relative group">Learn from the best Airborne Wind Energy Pioneers
+    <div id="learn-from-the-best-airborne-wind-energy-pioneers" class="anchor"></div>
+    
+</h1>
+<lite-youtube videoid="qd_hEja6bzE" playlabel="qd_hEja6bzE" params=""></lite-youtube>
+
+
+<h1 class="relative group">
+    <div id="" class="anchor"></div>
+    
+</h1>
+
     </div>
   </section>
 
