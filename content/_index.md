@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,6 +20,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+            background: #01293f
         }
         .video-header video {
             position: fixed;
@@ -47,12 +45,13 @@
             justify-content: center;
             gap: 10px;
             padding: 20px;
+            width: 100%;
         }
         .section:nth-child(even) {
-            background: #01293f; /* alternating section background if desired */
+            background: #06151d; /* alternating section background if desired */
         }
         .section:nth-child(odd) {
-            background: #06151d; /* solid background */
+            background: #01293f; /* solid background */
             position: relative;  /* ensures it appears above the fixed video */
     z-index: 1;          /* puts the section over the video */
 }
@@ -85,9 +84,6 @@
 <body>
            <!-- 🎥 Video Header -->
     <div class="video-header">
-        <video autoplay loop muted playsinline>
-            <source src="assets/shorter-video.mp4" type="video/mp4">
-        </video>
         <div class="header-text">
             AWE will change the game for wind energy
         </div>
@@ -172,14 +168,12 @@ expensive equipment is flying around in the air. </h4>
         });
     </script>
     </script>
-    
-
 </body>
 </html>
 
-# Learn from the best Airborne Wind Energy Pioneers
-{{< youtubeLite id="qd_hEja6bzE" label="Pulling Power from the Sky: The Story of Makani [Feature Film]" >}}
-#
+
+
+
 
 
 
