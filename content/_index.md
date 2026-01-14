@@ -4,7 +4,7 @@
     <title>Two Animations + Text</title>
     <style>
         body {
-            margin: 0;
+            margin: center;
             padding: 0;
             font-family: Arial, sans-serif;
             background: #002544;
@@ -20,7 +20,6 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            background: #01293f
         }
         .video-header video {
             position: fixed;
@@ -47,14 +46,6 @@
             padding: 20px;
             width: 100%;
         }
-        .section:nth-child(even) {
-            background: #06151d; /* alternating section background if desired */
-        }
-        .section:nth-child(odd) {
-            background: #01293f; /* solid background */
-            position: relative;  /* ensures it appears above the fixed video */
-    z-index: 1;          /* puts the section over the video */
-}
         .text-block {
             padding-left: 3%;
             padding-right: 3%;
