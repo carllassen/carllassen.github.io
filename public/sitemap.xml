@@ -68,6 +68,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://localhost:1313/old_index/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/contact/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

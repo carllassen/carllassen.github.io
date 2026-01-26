@@ -1,0 +1,114 @@
+{{ $src := .Get "src" }}
+{{ if not $src }}{{ errorf "lottie shortcode: missing 'src' parameter' " }}{{ end }}
+{{ $id := .Get "id" | default (printf "lottie-%d" (now.Unix)) }}
+{{ $width := .Get "width" | default "100%" }}
+{{ $height := .Get "height" | default "auto" }}
+{{ $loop := .Get "loop" | default "true" }}
+{{ $autoplay := .Get "autoplay" | default "true" }}
+{{ $position := (lower (.Get "position" | default "right")) }}
+{{ $scrub := .Get "scrub" | default "false" }}
+
+<div class="lottie-section">
+  {{ if eq $position "left" }}
+    <div class="anim-block" id="{{ $id }}" style="width:{{ $width }};height:{{ $height }};"></div>
+    <div class="text-block">{{ .Inner | markdownify }}</div>
+  {{ else if eq $position "center" }}
+    <div class="text-block">{{ .Inner | markdownify }}</div>  
+    <div class="anim-block" id="{{ $id }}" style="width:{{ $width }};height:{{ $height }};"></div>
+    <div class="text-block">{{ .Inner | markdownify }}</div>
+  {{ else }}
+    <div class="text-block">{{ .Inner | markdownify }}</div>
+    <div class="anim-block" id="{{ $id }}" style="width:{{ $width }};height:{{ $height }};"></div>
+  {{ end }}
+</div>
+
+<script>
+(function(){
+  var SCRUB = {{ if eq $scrub "true" }}true{{ else }}false{{ end }};
+  function init(){
+    // if scrub is enabled we force autoplay=false and loop=false so we control frames
+    var anim = lottie.loadAnimation({
+      container: document.getElementById("{{ $id }}"),
+      renderer: "svg",
+      loop: {{ if and (not (eq $scrub "true")) (eq $loop "true") }}true{{ else }}false{{ end }},
+      autoplay: {{ if and (not (eq $scrub "true")) (eq $autoplay "true") }}true{{ else }}false{{ end }},
+      path: "{{ $src }}"
+    });
+
+    if (!SCRUB) return;
+
+    // wait until frames are available, then attach scroll mapping
+    function whenReady(cb){
+      // try to use getDuration(true) which returns frames, or totalFrames
+      var tries = 0;
+      function check(){
+        tries++;
+        var frames = (typeof anim.getDuration === 'function') ? anim.getDuration(true) : (anim.totalFrames || 0);
+        if (frames && frames > 1) {
+          cb(Math.max(1, Math.floor(frames)));
+          return;
+        }
+        // some builds emit 'DOMLoaded' / 'data_ready' event
+        if (typeof anim.addEventListener === 'function') {
+          try {
+            anim.addEventListener('DOMLoaded', function onDom(){ anim.removeEventListener && anim.removeEventListener('DOMLoaded', onDom); cb(anim.getDuration(true) || anim.totalFrames || 1); });
+            anim.addEventListener('data_ready', function onData(){ anim.removeEventListener && anim.removeEventListener('data_ready', onData); cb(anim.getDuration(true) || anim.totalFrames || 1); });
+          } catch(e){}
+        }
+        if (tries < 60) { // wait up to ~1.5s
+          setTimeout(check, 25);
+        } else {
+          cb(anim.totalFrames || Math.max(1, Math.round(anim.getDuration ? anim.getDuration(true) : 60)));
+        }
+      }
+      check();
+    }
+
+    var container = document.getElementById("{{ $id }}");
+    if (!container) return;
+    anim.stop();
+
+    whenReady(function(frames){
+      // clamp frames
+      frames = Math.max(1, frames);
+
+      // compute progress based on element position in viewport
+      function computeProgress(){
+        var rect = container.getBoundingClientRect();
+        var vh = window.innerHeight || document.documentElement.clientHeight;
+        // progress = how far the element's midpoint is from bottom to top of viewport
+        var elemMid = rect.top + rect.height * 0.5;
+        var progress = 1 - (elemMid / (vh + rect.height)); // roughly 0..1 while passing viewport
+        // alternative mapping: element entering viewport => progress from 0 to 1
+        // clamp
+        progress = Math.max(0, Math.min(1, progress));
+        return progress;
+      }
+
+      var ticking = false;
+      function update(){
+        ticking = false;
+        var p = computeProgress();
+        var frame = Math.round(p * (frames - 1));
+        try { anim.goToAndStop(frame, true); } catch(e){}
+      }
+
+      // update on scroll/resize; initial update
+      window.addEventListener('scroll', function(){
+        if (!ticking){ ticking = true; requestAnimationFrame(update); }
+      }, { passive: true });
+      window.addEventListener('resize', function(){
+        if (!ticking){ ticking = true; requestAnimationFrame(update); }
+      });
+
+      // call once to set initial frame
+      requestAnimationFrame(update);
+    });
+  }
+
+  if (window.lottie) { init(); return; }
+  var s = document.createElement('script'); s.src = "https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"; s.async = true;
+  s.onload = init;
+  document.head.appendChild(s);
+})();
+</script>

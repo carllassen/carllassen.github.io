@@ -1,0 +1,136 @@
+.chroma,
+.chroma *,
+.chroma:is(.dark *),
+.chroma:is(.dark *) * {
+  color: #002625ff;
+  font-weight: unset;
+  font-style: unset;
+}
+
+body {
+  background-color: #ffeed9ff; /* change this to the color you want */
+  color: #002625ff;            /* optional: set default text color for contrast */
+}
+
+/* If your site uses a dark theme class */
+.dark body {
+  background-color: #002625ff;
+  color: #ffeed9ff;
+}
+
+/* If other rules override it, force with !important */
+body.bg-override {
+  background-color: #002625ff !important;
+}
+
+/* Lottie two-column section _____________________________________________________________________________*/
+.lottie-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  width: 100%;
+}
+.lottie-section .text-block {
+  flex: 1;
+  font-size: 1.1rem;
+}
+.lottie-section .anim-block {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .lottie-section { flex-direction: column; text-align: center; }
+  .lottie-section .text-block { font-size: 1rem; }
+}
+
+/* Fixed video behind header (75% of viewport)__________________________________________________________ */
+:root{
+  --front-bg: #002625ff;    /* change this to the content layer background (opaque) */
+  --front-text-color: rgb(255, 0, 0); /* change this to change text color */
+}
+
+/* Fixed video behind header (75% of viewport)__________________________________________________________ */
+.video-bg {
+  position: fixed;
+  top: -10%;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 95vh;           /* fills 3/4 of viewport height */
+  min-height: 75vh;
+  object-fit: cover;
+  z-index: -2;            /* behind page content */
+  pointer-events: none;   /* allow clicks on overlaid content */
+}
+
+/* Content/front layer that sits above the video */
+.front-layer {
+  position: relative;
+  z-index: 2;             /* in front of the video */
+  background-color: var(--front-bg);
+  color: var(--front-text-color);
+  padding-top: 1rem;
+  width: 100vw;
+  left: 50%;
+  top: 35vh;                  /* starts just below the video */
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  padding-left: env(safe-area-inset-left, 1rem);
+  padding-right: env(safe-area-inset-right, 1rem);
+  padding-bottom: 0rem;
+}
+
+/* Add horizontal margins for main content (10% each side) */
+.front-layer > * {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* Ensure figures, images and two-column text respect the margins */
+.front-layer figure,
+.front-layer img,
+.front-layer .lottie-section,
+.front-layer .lottie-section .text-block {
+  box-sizing: border-box;
+  max-width: calc(100% - 20%); /* account for left+right margins */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Smaller screens: reduce margins for readability */
+@media (max-width: 768px) {
+  .front-layer > * {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .front-layer figure,
+  .front-layer img,
+  .front-layer .lottie-section,
+  .front-layer .lottie-section .text-block {
+    max-width: 100%;
+  }
+}
+
+/* title overlay stays above content and video */
+.header-overlay {
+  position: relative;
+  z-index: 3;
+}
+
+footer,
+.site-footer,
+.footer,
+.theme-footer {
+  position: relative;
+  z-index: 2;
+  background-color: var(--front-bg);
+  color: var(--front-text-color);
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  padding: 2rem 1rem;
+  top: 35vh;
+}

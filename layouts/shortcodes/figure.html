@@ -1,0 +1,21 @@
+{{ $src := .Get "src" }}
+{{ if not $src }}{{ errorf "media shortcode: missing 'src' parameter" }}{{ end }}
+{{ $id := .Get "id" | default (printf "media-%d" (now.Unix)) }}
+{{ $width := .Get "width" | default "100%" }}
+{{ $height := .Get "height" | default "auto" }}
+{{ $alt := .Get "alt" | default "" }}
+{{ $position := (lower (.Get "position" | default "right")) }}
+
+<div class="lottie-section">
+  {{ if eq $position "left" }}
+    <div class="anim-block">
+      <img id="{{ $id }}" src="{{ $src }}" alt="{{ $alt }}" style="width:{{ $width }};height:{{ $height }};object-fit:contain;display:block;" loading="lazy" />
+    </div>
+    <div class="text-block">{{ .Inner | markdownify }}</div>
+  {{ else }}
+    <div class="text-block">{{ .Inner | markdownify }}</div>
+    <div class="anim-block">
+      <img id="{{ $id }}" src="{{ $src }}" alt="{{ $alt }}" style="width:{{ $width }};height:{{ $height }};object-fit:contain;display:block;" loading="lazy" />
+    </div>
+  {{ end }}
+</div>
