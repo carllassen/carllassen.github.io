@@ -27,6 +27,7 @@ body.bg-override {
 .lottie-section {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
   padding: 20px 0;
   width: 100%;
@@ -58,8 +59,8 @@ body.bg-override {
   left: 0;
   right: 0;
   width: 100vw;
-  height: 95vh;           /* fills 3/4 of viewport height */
-  min-height: 75vh;
+  height: 15vh;           /* fills 3/4 of viewport height */
+  min-height: 95vh;
   object-fit: cover;
   z-index: -2;            /* behind page content */
   pointer-events: none;   /* allow clicks on overlaid content */

@@ -10,12 +10,10 @@
 
 <div class="lottie-section">
   {{ if eq $position "left" }}
-    <div class="anim-block" id="{{ $id }}" style="width:{{ $width }};height:{{ $height }};"></div>
+    <div class="anim-block" id="{{ $id }}" style="width: {{ $width }}; height: {{ $height }};"></div>
     <div class="text-block">{{ .Inner | markdownify }}</div>
   {{ else if eq $position "center" }}
-    <div class="text-block">{{ .Inner | markdownify }}</div>  
-    <div class="anim-block" id="{{ $id }}" style="width:{{ $width }};height:{{ $height }};"></div>
-    <div class="text-block">{{ .Inner | markdownify }}</div>
+    <div class="anim-block" id="{{ $id }}" style="width: {{ $width }}; height: {{ $height }};"></div>
   {{ else }}
     <div class="text-block">{{ .Inner | markdownify }}</div>
     <div class="anim-block" id="{{ $id }}" style="width:{{ $width }};height:{{ $height }};"></div>

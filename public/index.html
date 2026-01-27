@@ -96,8 +96,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.b3086b657ef8470722e208e55f0c2060080d8de41b074393a6b633f89675217c7a39e664a728b3f1ec2c3da051264f86acf3868a4ad4ee03e3e7e40e7bcc6fdc.css"
-    integrity="sha512-swhrZX74Rwci4gjlXwwgYAgNjeQbB0OTprYz&#43;JZ1IXx6OeZkpyiz8ewsPaBRJk&#43;GrPOGikrU7gPj5&#43;QOe8xv3A==">
+    href="/css/main.bundle.min.2a861ddb75597287145e3854edb8efecbf41eca990bac337b76b0f57f6b79bb0ccb1535d5d13b67a1f46225b241330f97d78cd7a0615eac2e150192815b14f38.css"
+    integrity="sha512-KoYd23VZcocUXjhU7bjv7L9B7KmQusM3t2sPV/a3m7DMsVNdXRO2eh9GIlskEzD5fXjNegYV6sLhUBkoFbFPOA==">
 
   
   
@@ -634,7 +634,11 @@
   </video>
   <div class="header-overlay">
     <div class="title-card">
-        <br><br><br><br>
+        <br><br>
+    </div>
+  </div>
+</div>
+
 
 
 
@@ -646,9 +650,7 @@
 
 <div class="lottie-section">
   
-    <div class="text-block"></div>  
-    <div class="anim-block" id="logo_fly" style="width:30px;height:20;"></div>
-    <div class="text-block"></div>
+    <div class="anim-block" id="text_fly" style="width: 30px; height: 20;"></div>
   
 </div>
 
@@ -658,11 +660,11 @@
   function init(){
     
     var anim = lottie.loadAnimation({
-      container: document.getElementById("logo_fly"),
+      container: document.getElementById("text_fly"),
       renderer: "svg",
       loop: false,
       autoplay: false,
-      path: "lottie\/logo_fly.json"
+      path: "lottie\/text_fly.json"
     });
 
     if (!SCRUB) return;
@@ -694,7 +696,7 @@
       check();
     }
 
-    var container = document.getElementById("logo_fly");
+    var container = document.getElementById("text_fly");
     if (!container) return;
     anim.stop();
 
@@ -743,9 +745,6 @@
 })();
 </script>
 
-    </div>
-  </div>
-</div>
 <div class="front-layer">
 
 
@@ -759,7 +758,7 @@
 
 <div class="lottie-section">
   
-    <div class="anim-block" id="anim2" style="width:500px;height:auto;"></div>
+    <div class="anim-block" id="anim2" style="width: 500px; height: auto;"></div>
     <div class="text-block">
 <h2 class="relative group">The blue area captures 80% of the energy. The rest is almost waste.
     <div id="the-blue-area-captures-80-of-the-energy-the-rest-is-almost-waste" class="anchor"></div>
@@ -872,7 +871,7 @@
 
 <div class="lottie-section">
   
-    <div class="anim-block" id="anim1" style="width:500px;height:auto;"></div>
+    <div class="anim-block" id="anim1" style="width: 500px; height: auto;"></div>
     <div class="text-block">
 <h2 class="relative group">AWE only moves in the efficient area and uses 10x fewer materials
     <div id="awe-only-moves-in-the-efficient-area-and-uses-10x-fewer-materials" class="anchor"></div>

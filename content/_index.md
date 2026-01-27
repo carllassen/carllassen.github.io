@@ -4,12 +4,12 @@
   </video>
   <div class="header-overlay">
     <div class="title-card">
-        <br><br><br><br>{{< lottie src="lottie/logo_fly.json" id="logo_fly" position="center" width="30px" height="20"  scrub="true" >}}
-{{< /lottie >}}
+        <br><br>
     </div>
   </div>
 </div>
-
+{{< lottie src="lottie/text_fly.json" id="text_fly" position="center" width="30px" height="20"  scrub="true" >}}
+{{< /lottie >}}
 <div class="front-layer">
 
 {{< lottie src="lottie/animation2.json" id="anim2" width="500px" position="left" >}}
